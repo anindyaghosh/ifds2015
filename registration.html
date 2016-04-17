@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html lang="en-gb" dir="ltr">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="http://www.oneifds.com/add-register" />
+  <title>Registration</title>
+  <link href="/templates/yoo_nano2/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="/media/zoo/applications/documentation/templates/default/assets/css/zoo.css?ver=20150714" type="text/css" />
+  <link rel="stylesheet" href="/media/zoo/libraries/jquery/jquery-ui.custom.css?ver=20150714" type="text/css" />
+  <link rel="stylesheet" href="/media/zoo/libraries/jquery/plugins/timepicker/timepicker.css?ver=20150714" type="text/css" />
+  <link rel="stylesheet" href="/media/zoo/assets/css/submission.css?ver=20150714" type="text/css" />
+  <link rel="stylesheet" href="/plugins/system/zlframework/zlframework/assets/css/zl_ui.css?ver=20150714" type="text/css" />
+  <link rel="stylesheet" href="/plugins/system/zoo_zlelements/zoo_zlelements/elements/textareapro/assets/css/textareapro.css?ver=20150714" type="text/css" />
+  <link rel="stylesheet" href="/cache/widgetkit/widgetkit-3cfc9d58.css" type="text/css" />
+  <link rel="stylesheet" href="/templates/yoo_nano2/css/bootstrap.css" type="text/css" />
+  <script src="/media/jui/js/jquery.min.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery-noconflict.js" type="text/javascript"></script>
+  <script src="/media/jui/js/jquery-migrate.min.js" type="text/javascript"></script>
+  <script src="/media/zoo/assets/js/responsive.js?ver=20150714" type="text/javascript"></script>
+  <script src="/components/com_zoo/assets/js/default.js?ver=20150714" type="text/javascript"></script>
+  <script src="/media/zoo/libraries/jquery/jquery-ui.custom.min.js?ver=20150714" type="text/javascript"></script>
+  <script src="/media/zoo/assets/js/submission.js?ver=20150714" type="text/javascript"></script>
+  <script src="/media/zoo/assets/js/placeholder.js?ver=20150714" type="text/javascript"></script>
+  <script src="/media/zoo/assets/js/item.js?ver=20150714" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="/media/system/js/core.js" type="text/javascript"></script>
+  <script src="/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="/plugins/system/zoo_zlelements/zoo_zlelements/elements/textareapro/assets/js/textareapro.min.js?ver=20150714" type="text/javascript"></script>
+  <script src="/plugins/system/zlframework/zlframework/assets/js/jquery.plugins/jquery.inputlimiter.min.js?ver=20150714" type="text/javascript"></script>
+  <script src="/cache/widgetkit/widgetkit-7d012a12.js" type="text/javascript"></script>
+  <script type="text/javascript">
+jQuery(function($) {
+			 $('.hasTip').each(function() {
+				var title = $(this).attr('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					var mtelement = document.id(this);
+					mtelement.store('tip:title', parts[0]);
+					mtelement.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($('.hasTip').get(), {"maxTitleChars": 50,"fixed": false});
+		});
+  </script>
+
+<link rel="apple-touch-icon-precomposed" href="/templates/yoo_nano2/apple_touch_icon.png" />
+<link rel="stylesheet" href="/templates/yoo_nano2/css/base.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/styles/ifds/css/layout.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/styles/ifds/css/menus.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>.wrapper { max-width: 1000px; }
+#maininner { width: 100%; }
+</style>
+<link rel="stylesheet" href="/templates/yoo_nano2/styles/ifds/css/modules.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/css/tools.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/styles/ifds/css/system.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/css/extensions.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/styles/ifds/css/custom.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/css/color2/navy.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/css/font1/opensans.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/css/font2/opensans.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/styles/ifds/css/font3/opensans.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/styles/ifds/css/style.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/styles/ifds/css/responsive.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/css/print.css" />
+<link rel="stylesheet" href="/templates/yoo_nano2/fonts/opensans.css" />
+<script src="/templates/yoo_nano2/warp/js/warp.js"></script>
+<script src="/templates/yoo_nano2/warp/js/responsive.js"></script>
+<script src="/templates/yoo_nano2/warp/js/accordionmenu.js"></script>
+<script src="/templates/yoo_nano2/warp/js/dropdownmenu.js"></script>
+<script src="/templates/yoo_nano2/js/template.js"></script>
+<script type = "text/javascript">
+function whichsite(form) {
+    var site = form.elements.site,
+        i = site.length;
+    while (--i > -1) {
+        if (site[i].checked) {
+            return site[i].value;
+        }
+    }
+}
+</script>
+</head>
+
+<body id="page">
+
+
+		<div id="block-toolbar"><div class="wrapper">
+
+		<div id="toolbar" class="clearfix">
+
+						<div class="float-left">
+
+
+				<div class="module   deepest">
+
+
+<div class="custom-logo"></div></a>
+</div>
+			</div>
+
+
+
+								<div class="float-right"><div class="module   deepest">
+
+
+</div>
+<div class="module grouptitle grouptitle deepest">
+
+		</div>
+
+	</div></div>
+
+		</header>
+
+	</div></div>
+
+	<div id="block-main"><div class="wrapper">
+
+
+
+				<div id="main" class="grid-block">
+
+			<div id="maininner" class="grid-box">
+
+
+
+								<section id="content" class="grid-block"><div id="system-message-container">
+	</div>
+
+
+<div id="yoo-zoo" class="yoo-zoo documentation-default documentation-default-register">
+
+	<div class="submission">
+
+		<h1 class="headline">Registration Page</h1>
+
+
+<form action="#" onsubmit="window.open(whichsite(this), '_blank'); return false;" name="myform" id="regex">
+<fieldset class="pos-content creation-form">
+	<legend>Registration</legend>
+
+		<div class="element element-itemname required">
+	<strong style="font-size:14px">Your Name</strong><input type="text" id="name" placeholder="John Smith" required="" name="itemname" size="60" value="" /></div>
+<div class="element element-email required">
+	<strong style="font-size:14px">Your IFDS Email</strong>
+<div>
+	<input type="text" id="email" placeholder="someone@ifdsgroup.co.uk" required="" name="email" value="" size="60" title="Email" />
+</div></div>
+<div class="element element-text department required">
+	<strong style="font-size:14px">Department</strong>
+	<input type="text" id="department" placeholder="Your Department" required="" name="department" value="" size="60" maxlength="255">
+</div>
+
+<div class="element element-dept">
+	<strong required="" style="font-size:14px">Where do you want to go?</strong>
+	<table>
+	<tr>
+	<td style="width:150px"><input type="radio" style="font-size:13px" name="site" value="file:///H:/SSC/encorr.html"><strong> EnCorr</strong></td>
+	<td style="width:150px"><input type="radio" style="font-size:13px" name="site" value="file:///H:/SSC/qtp.html"><strong> FAST Conversions</strong></td>
+	<td style="width:150px"><input type="radio" style="font-size:13px" name="site" value="file:///H:/SSC/missupport.html"><strong> MIS Support</strong></td>
+	<td style="width:150px"><input type="radio" style="font-size:13px" name="site" value="file:///H:/SSC/standingdata.html"><strong> Standing Data</strong></td>
+	</tr>
+	</table>
+</div>
+<br>
+<div>
+	<input required="" onclick="check()" type="checkbox" id="chktc">
+	<strong id="racc" style="font-size:14px">I have read and accept the <a  data-toggle="modal" data-target="#myModal" id="tandc" style="color:#B20000">Terms and Conditions</a></strong>
+</div>
+</fieldset>
+	<p class="info" style="font-size:14px">Fields marked with an asterisk (*) are required.</p>
+
+	<div class="submit">
+		<button type="submit" id="submit-button" onclick="saveReg(); document.getElementByName('rad1')[i].checked;" class="button-green">Submit</button>
+	</div>
+</form>
+<script type="text/javascript">
+function saveReg() {
+	var name = document.getElementById("name");
+	var email = document.getElementById("email");
+	var department = document.getElementById("department");
+
+	localStorage.setItem("name", name.value);
+	localStorage.setItem("email", email.value);
+	localStorage.setItem("department", department.value);
+	console.log(saveReg);
+}
+</script>
+	</div>
+
+</div></section>
+
+
+			</div>
+			<!-- maininner end -->
+
+
+
+		</div>
+				<!-- main end -->
+
+
+
+	</div></div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">x</button>
+          <h4 class="modal-title">Terms and Conditions</h4>
+        </div>
+        <div class="modal-body">
+          <p>You cannot click outside of this modal to close it.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<script type="text/javascript">
+function check() {
+if (document.getElementById('chktc').checked == true) {
+	document.getElementById("tandc").style.color = "#144b7b";
+}
+else {
+	document.getElementById("tandc").style.color = "#B20000";
+}}
+/*setInterval("check()", 1);
+function check() {
+var x = document.getElementById("racc");
+    if (document.getElementById('chktc').checked == true) {
+        x.innerHTML = "The terms and conditions have been accepted";
+    } else {
+        x.innerHTML = "The terms and conditions have not been accepted";
+    }
+}*/
+</script>
+</body>
+</html>
